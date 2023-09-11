@@ -1,0 +1,1030 @@
+/*============================
+      nacommon css
+==============================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.tittle {
+	text-align: center;
+	margin-bottom: 60px;
+
+}
+
+.tittle h1 {
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.tittle p {
+	font-size: 14px;
+	font-weight: 400;
+	width: 480px;
+	margin: 0 auto;
+}
+/*============================
+      common css
+==============================*/
+
+/*============================
+      nav part start css
+==============================*/
+.lika p {
+	background: red;
+	height: 20px;
+	width: 200px;
+	color: red;
+	margin-left: auto;
+}
+nav {
+	
+	border: 1px solid #57481e;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+ .fixe {
+    
+ 	background: #000;
+ 	
+
+
+
+ }
+
+
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	transition: .4s;
+	position: relative;
+	padding: 0 !important;
+}
+
+nav ul li a:hover {
+	color: #fec600;
+}
+
+nav ul li a:after {
+	content: "";
+	left: 0;
+	bottom: -29px;
+	width: 0;
+	height: 3px;
+	background: #fec600;
+	position: absolute;
+	transition: .4s;
+}
+
+nav ul li a:hover:after {
+	width: 100%;
+}
+
+nav .droparea {
+	position: relative;
+}
+
+nav ul li .drop  {
+	position: absolute;
+	bottom: -170px;
+	left: 0;
+	width: 100%;
+	background: red;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 20px;
+	opacity: 0;
+	transition: .50s;
+	visibility: hidden;
+}
+
+nav ul li ol {
+	border-right: 1px solid #000;
+	width: 25%;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+
+nav ul li:hover .drop {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+/*============================
+      nav part start css
+==============================*/
+/*============================
+      banner part start css
+==============================*/
+#banner-part .banner {
+	
+	background: url(../image/banner-img.png) no-repeat center;
+	background-size: cover;
+	outline: 0;
+	position: relative;
+
+
+}
+
+#banner-part .overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	color: #fff;
+	padding-top: 240px;
+	padding-bottom: 190px;
+}
+
+#banner-part .overlay .banner-text h1 {
+    font-size: 55px;
+    font-weight: 800;
+    color: #fec600;
+    text-transform: uppercase;
+}
+
+#banner-part .overlay .banner-text h2 {
+	font-size: 36px;
+	font-weight: 400;
+
+}
+
+#banner-part .overlay .banner-text p {
+	font-size: 14px;
+	font-weight: 400;
+	width: 540px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#banner-part .overlay .banner-text a {
+	display: inline-block;
+	padding: 20px 30px;
+	border: 1px solid #fff;
+	color: #fff;
+	transition: .4s;
+	margin-top: 60px;
+	
+}
+
+#banner-part .overlay .banner-text a:nth-child(odd) {
+	margin-left: 20px;
+}
+
+#banner-part .overlay .banner-text a:hover {
+	background: #fec600;
+	border: 1px solid #fec600;
+	color: #111111;
+}
+/*============================
+      banner part end css
+==============================*/
+
+/*============================
+      tera part start css
+==============================*/
+#tera-part .tera {
+	position: absolute;
+	width: 100%;
+	height: 147px;
+	left: 0;
+	top: 590px;
+	transform: skewX(-84deg);
+	transform-origin: left bottom;
+	background: #fff;
+
+
+}
+/*============================
+      tera part end css
+==============================*/
+
+/*============================
+      about part start css
+==============================*/
+
+#about-part .item:hover {
+    filter: drop-shadow(0 0 0.75rem #5f5d5d);
+}
+#about-part .img {
+	width: 349px;
+	height: 349px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+	
+}
+
+#about-part .img img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+#about-part .item {
+	background: #eeeeee;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 72px;
+	position: relative;
+    z-index: 5;
+
+
+}
+
+
+#about-part .item .shape {
+	width: 50px;
+	height: 50px;
+	background: #eeeeee;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,50%) rotate(45deg);
+	z-index: -1;
+}
+
+#about-part .item .shape1 {
+	width: 50px;
+	height: 50px;
+	background: #eeeeee;
+	position: absolute;
+	top: 25%;
+	left: 100%;
+	transform: translate(-50%,50%) rotate(45deg);
+	z-index: -1;
+}
+
+
+#about-part .item .shape2 {
+	width: 50px;
+	height: 50px;
+	background: #eeeeee;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	transform: translate(-50%,50%) rotate(45deg);
+	z-index: -1;
+}
+
+#about-part .item .shape3 {
+	width: 50px;
+	height: 50px;
+	background: #eeeeee;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	z-index: -1;
+}
+
+
+
+#about-part .item .round {
+	width: 20px;
+	height: 20px;
+	background: #444444;
+	position: absolute;
+	left: 50%;
+	bottom: -40px;
+	transform: translate(-50%,50%);
+	border-radius: 50%;
+    
+}
+
+#about-part .item .round1 {
+	width: 20px;
+	height: 20px;
+	background: #444444;
+	position: absolute;
+	right: -15%;
+	bottom: 46%;
+	transform: translate(-50%,50%);
+	border-radius: 50%;
+    
+}
+
+#about-part .item:hover .round {
+	background: #fec600;
+}
+
+#about-part .item:hover .round1 {
+	background: #fec600;
+}
+
+#about-part .item .round2 {
+	width: 20px;
+	height: 20px;
+	background: #444444;
+	position: absolute;
+	left: -9%;
+	bottom: 46%;
+	transform: translate(-50%,50%);
+	border-radius: 50%;
+    
+}
+
+#about-part .item:hover .round2 {
+	background: #fec600;
+}
+
+#about-part .item .round3 {
+	width: 20px;
+	height: 20px;
+	background: #444444;
+	position: absolute;
+	left: 50%;
+	top: -55%;
+	transform: translate(-50%,50%);
+	border-radius: 50%;
+    
+}
+
+#about-part .item:hover .round3 {
+	background: #fec600;
+}
+
+.clr {
+	clear: both;
+}
+
+/*============================
+      about part end css
+==============================*/
+
+/*============================
+      service part end start
+==============================*/
+#service-part {
+	margin-top: 100px;
+	position: relative;
+}
+#service-part .prev {
+	position: absolute;
+	transform: translate(-50%,50%) rotate(-91deg);
+	left: 45%;
+	top: -110px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: red;
+}
+
+#service-part .next {
+	position: absolute;
+	transform: translate(-50%,50%) rotate(-91deg);
+	left: 45%;
+	bottom: -75px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: red;
+}
+
+#service-part .line {
+	position: absolute;
+	left: 576px;
+	top: -75px;
+	z-index: -1;
+}
+
+#service-part .item {
+	position: relative;
+	
+
+}
+
+#service-part .item p {
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f5f5f5;
+}
+
+#service-part .angle1 {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	/*left: -26px;*/
+	left: 0;
+	top: 50%;
+	transform: rotate(45deg) translate(-50%,-50%);
+	
+	z-index: -1;
+	background: #f5f5f5;
+}
+/*============================
+      service part end css
+==============================*/
+
+/*============================
+      portfolio part strat css
+==============================*/
+#portfolio-part {
+	background: url(../image/background-img.png) no-repeat center;
+    background-size: cover;
+    margin: 100px 0;
+    }
+
+#portfolio-part .item {
+	display: flex;
+	flex-direction: column;
+}
+
+#portfolio-part .item:nth-child(odd) {
+	flex-direction: column-reverse;
+}
+
+#portfolio-part .item .img {
+	margin: 15px 0;
+	position: relative;
+}
+
+#portfolio-part .item .img img {
+	width: 100%;
+}
+
+#portfolio-part .item .img .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	
+	transition: .4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	color: #fff;
+}
+
+#portfolio-part .item .img:hover .overlay {
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	opacity: 1;
+}
+
+/*============================
+      portfolio part end css
+==============================*/
+
+/*============================
+      testmonial part start css
+==============================*/
+#testmonial-part {
+	background: url(../image/testmonial-img.png) no-repeat center;
+	
+	background-size: cover;
+	
+	
+}
+
+#testmonial-part .left .round {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;
+	margin: 15px 0;
+	overflow: hidden;
+	position: relative;
+	transform: scale(1);
+    margin-left: 44px;
+}
+
+#testmonial-part .left .round img {
+	position: absolute;
+	top: 12px;
+	left: -10px;
+}
+
+#testmonial-part .left .slick-center .round {
+	transform: scale(1.3);
+	background: yellow;
+}
+
+
+#testmonial-part .line {
+	position: relative;
+}
+
+#testmonial-part .line-area {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 450px;
+}
+
+
+#testmonial-part .right {
+	width: 100%;
+	height: 100%;;
+	
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#testmonial-part .right .center {
+	background: #f1f1f1;
+	width: 500px;
+	padding: 60px 30px 0 10px;
+
+}
+
+#testmonial-part .right h3 {
+	margin-left: 575px;
+	padding-bottom: 50px;
+	font-size: 16px;
+}
+
+ .tangle {
+	height: 40px;
+	width: 40px;
+	background: #fec600;
+	position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+
+}
+
+#testmonial-part .right .center h2 {
+	font-size: 20px;
+	color: #111111;
+}
+
+#testmonial-part .right .center i {
+	font-size: 16px;
+	color: #fec600;
+}
+
+#testmonial-part .right .center h5 {
+	font-size: 16px;
+	color: #111111;
+}
+
+#testmonial-part .prev1 {
+	position: absolute;
+	transform: translate(-50%,50%) ;
+	left: 57%;
+    top: -58px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: red;
+}
+
+#testmonial-part .next1 {
+	position: absolute;
+	transform: translate(-50%,50%) ;
+	left: 57%;
+    bottom:-25px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: red;
+}
+/*============================
+      testmonial part end css
+==============================*/
+
+/*============================
+      member part start css
+==============================*/
+#member-part {
+	
+	margin: 100px 0;
+	
+}
+#member-part .img {
+	width: 100%;
+	height: 267px;
+	
+	text-align: center;
+	overflow: hidden;
+    clip-path: polygon(0 0,100% 0,100% 87%,0% 100%);
+   
+
+}
+
+#member-part .img .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	transform: scale(0);
+	transition: all linear .4s;
+	-webkit-transition: all linear .4s;
+	-moz-transition: all linear .4s;
+	-o-transition: all linear .4s;
+	-ms-transition: all linear .4s;
+}
+
+#member-part .member:hover .overlay {
+	transform: scale(1);
+}
+
+#member-part .text {
+	width: 100%;
+	text-align: center;
+	
+	margin-top: -35px;
+    padding-top: 50px;
+	
+    
+}
+
+#member-part .member {
+	padding-bottom: 20px;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
+}
+
+#member-part .member .text .icon {
+    margin-top: -24px;
+    transition: .4s;
+    opacity: 0;
+}
+
+
+#member-part .member:hover .text .icon {
+	margin-top: 10px;
+	opacity: 1;
+}
+
+
+/*============================
+      member part end css
+==============================*/
+
+/*============================
+      priging part start css
+==============================*/
+#priging-part {
+	
+}
+#priging-part .item h2 {
+    background: #444444;
+    text-align: center;
+    padding: 30px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+#priging-part .item .round {
+
+   
+}
+
+#priging-part .item .round p {
+	
+	height: 100px;
+	width: 100px;
+	background: #444444;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 20px;
+	position: absolute;
+	left: 31%;
+	top: 62px;
+    z-index: 1;
+	
+	
+}
+#priging-part .item .round  .dolar{
+	font-size: 30px;
+   margin-top: 30px;
+   display: inline-block;
+}
+#priging-part .item .round p .month {
+    display: block;
+}
+
+#priging-part .item .list {
+	background: #f1f1f1;
+	text-align: center;
+	padding: 50px 0 20px 0;
+
+	
+}
+
+#priging-part .item .list li {
+    margin-top: 30px;
+}
+#priging-part .item .pricing-botton h3 {
+/*	position: absolute;
+	bottom: 0;
+	left: 0;*/
+	background: #444444;
+	padding: 30px 0; 
+	
+	text-align: center;
+}
+/*#priging-part .item .round  span {
+	margin-top: 20px;
+}*/
+/*============================
+      priging part end css
+==============================*/
+
+/*============================
+      counter part start css
+==============================*/
+#counter-part {
+	background: url(../image/cou-img.png) no-repeat center;
+    background-size: cover;
+   
+    transform: skewY(-2deg);
+    transform-origin: right;
+    margin-top: 100px;
+}
+
+#counter-part .overflow {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+
+ #counter-part .item {
+ 	
+ 	height: 200px;
+ 	margin: 30px 0;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-direction: column;
+ 	border: 1px solid #fff;
+ 	color: #fff;
+ } 
+
+
+/*============================
+      counter part end css
+==============================*/
+
+/*============================
+   footer slider part start css
+==============================*/
+#footer-slider {
+	background: #f1f1f1;
+	transform: skewY(-2deg);
+	transform-origin: right;
+	margin-top: 100px;
+
+}
+
+#footer-slider .item {
+	outline: 0;
+
+
+}
+
+#footer-slider .item .img {
+	height: 120px;
+	width: 210px;
+	border: 1px solid #cccccc;
+	/*padding: 40px 20px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+	
+}
+
+#footer-slider .item .img img {
+	/*width: 100%;*/
+	/*height: 100%;*/
+}
+/*============================
+      footer slider part end css
+==============================*/
+
+/*============================
+  logo part start css
+==============================*/
+    #logo-part {
+    	background: #222222;
+    	transform: skewY(-2deg);
+    	transform-origin: right;
+    	
+    	text-align: center;
+    	position: relative;
+    }
+
+    #logo-part .logo {
+    	padding: 50px 0;
+    	
+    	/*border-bottom: 3px solid #525252;*/
+    }
+
+    #logo-part .logo:after {
+    	position: absolute;
+    	content: "";
+    	bottom: 0;
+    	left: 0;
+    	height: 2px;
+    	width: 100%;
+    	background: #525252;
+
+    }
+/*============================
+  logo part end css
+==============================*/
+
+/*============================
+  footer part start css
+==============================*/
+#footer-part {
+	background: #222222;
+	
+}
+
+#footer-part .item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 60px;
+	color: #fff;
+	border-left: 1px solid #353535;
+	
+}
+
+
+
+#footer-part .item .icon i {
+   width: 50px;
+   height: 50px;
+   color: #353535;
+   border-radius: 50%;
+   background: #fec600;
+   line-height: 50px;
+   text-align: center;
+
+}
+
+#footer-part .item .text {
+	
+
+}
+
+#footer-part .item .text p {
+    margin-top: 20px;
+    color: #909090;
+    width: 175px;
+}
+
+
+
+#footer-part .main {
+	text-align: center;
+}
+
+#footer-part .main .icon i {
+   width: 50px;
+   height: 50px;
+   color: #353535;
+   border-radius: 50%;
+   background: #fff;
+   line-height: 50px;
+   text-align: center;
+   margin: 30px 15px;
+   transition: .4s;
+}
+
+#footer-part .main .icon  .middle {
+   background: #fec600;
+
+}
+
+
+#footer-part .main .icon  .middle {
+   background: #fec600;
+}
+
+#footer-part .main .icon  .middle:hover {
+   background: #ffff;
+}
+
+
+#footer-part .main .icon i:hover {
+	background: #fec600;
+}
+
+#footer-part .main .text h2 {
+	color: #fff;
+	margin-top: 60px;
+}
+/*============================
+  footer part end css
+==============================*/
+
+/*============================
+    copyright part start css
+==============================*/
+#copyright-part {
+	background: #444444;
+}
+
+#copyright-part .copyright  {
+	text-align: center;
+}
+
+#copyright-part .copyright p {
+	color: #f5f5f5;
+}
+
+#copyright-part .copyright p span {
+	color: #fec600;
+}
+/*============================
+    copyright part end css
+==============================*/
+
+.go-top {
+	position: fixed;
+	right: 16px;
+	bottom: 10px;
+	height:50px;
+	width:50px;
+	background: rgba(0,0,0,.7);
+	font-size: 20px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    border-radius: 50%;
+}
